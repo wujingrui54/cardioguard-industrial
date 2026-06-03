@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="'Noto Sans SC','Noto Sans KR',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1120"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#EF4444"/>
+      <stop offset="0.5" stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="badge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EF4444"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- subtle grid -->
+  <g stroke="rgba(148,163,184,0.10)" stroke-width="1">
+    <path d="M0 80H1200M0 160H1200M0 240H1200M0 320H1200M0 400H1200M0 480H1200M0 560H1200"/>
+    <path d="M80 0V630M160 0V630M240 0V630M320 0V630M400 0V630M480 0V630M560 0V630M640 0V630M720 0V630M800 0V630M880 0V630M960 0V630M1040 0V630M1120 0V630"/>
+  </g>
+
+  <!-- pulse line motif -->
+  <path d="M80 410 H260 L320 290 L420 540 L500 250 L580 410 H1120"
+        stroke="#EF4444" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+
+  <!-- brand icon -->
+  <g transform="translate(80,80)">
+    <rect width="84" height="84" rx="20" fill="url(#badge)"/>
+    <path d="M14 42h14l6-16 14 32 6-16h26" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="184" y="118" fill="#F8FAFC" font-size="28" font-weight="700" letter-spacing="2">CARDIOGUARD INDUSTRIAL</text>
+  <text x="184" y="148" fill="#94A3B8" font-size="18" font-weight="500" letter-spacing="3">工心守护 · 산업심장수호</text>
+
+  <!-- main headline -->
+  <text x="80" y="270" fill="#F8FAFC" font-size="64" font-weight="900" letter-spacing="-1">工业场所心脏急救</text>
+  <text x="80" y="350" font-size="64" font-weight="900" letter-spacing="-1" fill="url(#accent)">智能响应平台</text>
+
+  <!-- subtitle -->
+  <text x="80" y="412" fill="#CBD5E1" font-size="22" font-weight="500">AI · IoT · CPR · AHA 2025 ECC Guidelines · Bilingual ZH / KR</text>
+
+  <!-- bottom badges -->
+  <g transform="translate(80,490)">
+    <rect width="260" height="44" rx="22" fill="rgba(239,68,68,0.18)" stroke="rgba(239,68,68,0.5)"/>
+    <text x="130" y="29" text-anchor="middle" fill="#FCA5A5" font-size="16" font-weight="700">数字健康医疗竞赛</text>
+
+    <rect x="280" width="220" height="44" rx="22" fill="rgba(59,130,246,0.18)" stroke="rgba(59,130,246,0.5)"/>
+    <text x="390" y="29" text-anchor="middle" fill="#93C5FD" font-size="16" font-weight="700">主题: 产业安全</text>
+
+    <rect x="520" width="200" height="44" rx="22" fill="rgba(245,158,11,0.18)" stroke="rgba(245,158,11,0.5)"/>
+    <text x="620" y="29" text-anchor="middle" fill="#FCD34D" font-size="16" font-weight="700">中韩双语 · Open Source</text>
+  </g>
+
+  <!-- footer -->
+  <text x="80" y="588" fill="#64748B" font-size="14">
+    Wu Jingrui · Xi'an Medical College · Kyungwoon University · 2026
+  </text>
+</svg>

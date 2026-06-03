@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /assets/CardioGuard_Industrial_KR.pdf$
+Allow: /assets/
+
+Sitemap: https://cardioguard-industrial.netlify.app/sitemap.xml

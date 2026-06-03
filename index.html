@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#DC2626" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0B1120" media="(prefers-color-scheme: dark)" />
+
+  <!-- Primary SEO -->
+  <title data-i18n="meta.title">工心守护 | 工业场所心脏急救响应平台</title>
+  <meta name="description" content="CardioGuard Industrial 산업심장수호 — AI · IoT · CPR 기반 산업 현장 심정지 응급 대응 플랫폼. Digital Health Competition · Industrial Safety. 工业场所心脏急救智能响应平台 · 中韩双语 · AHA 2025 ECC 标准。" />
+  <meta name="keywords" content="数字健康,产业安全,心脏骤停,AED,CPR,心肺复苏,工业急救,디지털 헬스,산업 안전,심정지,Digital Health,Industrial Safety,Cardiac Arrest,Emergency Response,AHA 2025,KACPR" />
+  <meta name="author" content="Wu Jingrui (吴静蕊) · Xi'an Medical College · Kyungwoon University" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="generator" content="CardioGuard Industrial · static" />
+  <link rel="canonical" href="https://cardioguard-industrial.netlify.app/" />
+  <link rel="alternate" hreflang="zh-CN" href="https://cardioguard-industrial.netlify.app/" />
+  <link rel="alternate" hreflang="ko-KR" href="https://cardioguard-industrial.netlify.app/?lang=ko" />
+  <link rel="alternate" hreflang="x-default" href="https://cardioguard-industrial.netlify.app/" />
+
+  <!-- Favicon (inline SVG, no extra request) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23F43F5E'/%3E%3Cstop offset='1' stop-color='%23DC2626'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Cpath d='M8 32h10l5-12 10 24 5-12h18' stroke='white' stroke-width='4.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <link rel="apple-touch-icon" href="assets/icon-180.svg" />
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Open Graph (Facebook / LinkedIn / WeChat) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CardioGuard Industrial · 工心守护 · 산업심장수호" />
+  <meta property="og:title" content="工心守护 · CardioGuard Industrial — 工业场所心脏急救响应平台" />
+  <meta property="og:description" content="融合 AHA 2025 ECC 指南、AI 风险预测、AED 物联网络与 CPR 数字培训,为工业园区提供 \"监测-预警-响应-培训\" 全链路心脏急救解决方案。Digital Health Competition · Industrial Safety entry." />
+  <meta property="og:url" content="https://cardioguard-industrial.netlify.app/" />
+  <meta property="og:image" content="assets/og-image.svg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="CardioGuard Industrial cover — industrial workplace cardiac emergency response platform" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:locale:alternate" content="ko_KR" />
+  <meta property="og:locale:alternate" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CardioGuard Industrial · 산업심장수호" />
+  <meta name="twitter:description" content="AI · IoT · CPR-driven cardiac emergency response platform for industrial workplaces. 中/韩双语,韩文 PDF 一键导出。" />
+  <meta name="twitter:image" content="assets/og-image.svg" />
+
+  <!-- JSON-LD structured data (helps search engines + competition reviewers) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "CardioGuard Industrial",
+        "alternateName": ["工心守护", "산업심장수호"],
+        "applicationCategory": "HealthApplication",
+        "applicationSubCategory": "Emergency Response",
+        "operatingSystem": "Web (HTML5)",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "url": "https://cardioguard-industrial.netlify.app/",
+        "description": "AI · IoT · CPR-driven cardiac emergency response platform for industrial workplaces. Digital Health Competition entry under the Industrial Safety theme.",
+        "inLanguage": ["zh-CN", "ko-KR", "en"],
+        "author": {
+          "@type": "Person",
+          "name": "Wu Jingrui",
+          "alternateName": "吴静蕊",
+          "email": "253207006@ikw.ac.kr",
+          "affiliation": [
+            { "@type": "CollegeOrUniversity", "name": "Xi'an Medical College", "alternateName": "西安医学高等专科学校" },
+            { "@type": "CollegeOrUniversity", "name": "Kyungwoon University", "alternateName": "경운대학교" }
+          ]
+        },
+        "license": "https://opensource.org/licenses/MIT",
+        "keywords": "digital health, industrial safety, cardiac arrest, AED, CPR, IoT, AHA 2025, KACPR"
+      },
+      {
+        "@type": "CreativeWork",
+        "headline": "CardioGuard Industrial: A Bilingual Digital Platform for Industrial-Site Cardiac Emergency Response",
+        "datePublished": "2026-06-03",
+        "inLanguage": ["zh", "ko", "en"],
+        "author": { "@type": "Person", "name": "Wu Jingrui" },
+        "keywords": "industrial safety, cardiac arrest, AED IoT, digital health, China-Korea cooperation"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+SC:wght@400;500;700;900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#top" class="brand">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 12h4l2-5 4 10 2-5h6"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-title" data-i18n="brand.title">工心守护</span>
+          <span class="brand-sub" data-i18n="brand.sub">CardioGuard Industrial</span>
+        </span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Primary">
+        <a href="#method" data-i18n="nav.method">开发方法</a>
+        <a href="#features" data-i18n="nav.features">核心功能</a>
+        <a href="#dashboard" data-i18n="nav.dashboard">数据仪表盘</a>
+        <a href="#effects" data-i18n="nav.effects">应用价值</a>
+        <a href="#other" data-i18n="nav.other">其他说明</a>
+      </nav>
+
+      <div class="nav-controls">
+        <div class="lang-switch" role="group" aria-label="Language switch">
+          <button class="lang-btn active" data-lang="zh" type="button">中文</button>
+          <button class="lang-btn" data-lang="ko" type="button">한국어</button>
+        </div>
+        <button id="downloadPdfBtn" class="download-btn" type="button" aria-label="Download PDF">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span data-i18n="nav.download">一键下载PDF</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="grid-pattern"></div>
+        <div class="pulse-ring"></div>
+        <div class="pulse-ring delay"></div>
+      </div>
+      <div class="hero-inner">
+        <div class="hero-tag" data-i18n="hero.tag">数字健康 · 产业安全 · AI急救</div>
+        <h1 class="hero-title">
+          <span data-i18n="hero.title1">工业场所心脏急救</span><br/>
+          <span class="gradient-text" data-i18n="hero.title2">智能响应平台</span>
+        </h1>
+        <p class="hero-desc" data-i18n="hero.desc">
+          融合AHA 2025最新ECC指南、AI风险预测与AED物联网络，为工业园区提供"监测-预警-响应-培训"全链路心脏急救解决方案，让每一次"黄金4分钟"都不被错过。
+        </p>
+        <div class="hero-cta">
+          <a href="#features" class="btn btn-primary" data-i18n="hero.cta1">了解核心功能</a>
+          <a href="#dashboard" class="btn btn-ghost" data-i18n="hero.cta2">查看数据仪表盘</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-num">10<span class="stat-unit">%</span></div>
+            <div class="stat-label" data-i18n="hero.stat1">院外心脏骤停存活率</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">4<span class="stat-unit">min</span></div>
+            <div class="stat-label" data-i18n="hero.stat2">急救黄金时间窗</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">+40<span class="stat-unit">%</span></div>
+            <div class="stat-label" data-i18n="hero.stat3">早期AED使生存率提升</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">24<span class="stat-unit">/7</span></div>
+            <div class="stat-label" data-i18n="hero.stat4">全天候智能监测</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 1: METHOD ===================== -->
+    <section id="method" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num is-data">01</span>
+          <h2 data-i18n="method.title">网站设计与开发方法</h2>
+          <p class="section-lead" data-i18n="method.lead">
+            基于"用户中心-数据驱动-标准对接"三原则，采用现代Web前端栈与轻量化架构，确保平台在工业场景下的稳定、低延迟与可扩展。
+          </p>
+        </div>
+
+        <div class="method-grid">
+          <div class="method-card">
+            <div class="method-icon" style="--c:#EF4444">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z"/><polyline points="2 7 12 12 22 7"/><line x1="12" y1="22" x2="12" y2="12"/></svg>
+            </div>
+            <h3 data-i18n="method.c1.title">1. 需求与原则</h3>
+            <p data-i18n="method.c1.desc">对标AHA 2025 ECC指南，结合中韩两国工业场所急救痛点，确立"4分钟响应、双语可达、移动优先"的核心设计原则。</p>
+          </div>
+
+          <div class="method-card">
+            <div class="method-icon" style="--c:#3B82F6">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 data-i18n="method.c2.title">2. 技术架构</h3>
+            <p data-i18n="method.c2.desc">采用纯静态HTML5/CSS3/原生JS，零后端依赖；Chart.js实现数据可视化；html2pdf.js支持客户端PDF导出；可一键部署至Netlify/GitHub Pages。</p>
+          </div>
+
+          <div class="method-card">
+            <div class="method-icon" style="--c:#10B981">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <h3 data-i18n="method.c3.title">3. 双语国际化</h3>
+            <p data-i18n="method.c3.desc">基于data-i18n属性映射的轻量i18n方案，全站中韩双语一键切换；Noto Sans CJK字体确保跨平台一致显示。</p>
+          </div>
+
+          <div class="method-card">
+            <div class="method-icon" style="--c:#F59E0B">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3 data-i18n="method.c4.title">4. 可访问性</h3>
+            <p data-i18n="method.c4.desc">遵循WCAG 2.1 AA标准，语义化HTML、ARIA标签、键盘可达、4.5:1对比度，确保工厂安全管理员、医护、工人三类用户均可使用。</p>
+          </div>
+
+          <div class="method-card">
+            <div class="method-icon" style="--c:#8B5CF6">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 data-i18n="method.c5.title">5. 安全与隐私</h3>
+            <p data-i18n="method.c5.desc">前端零数据留存、HTTPS强制、PDF本地生成不上传，符合《个人信息保护法》(韩)与GDPR级最佳实践。</p>
+          </div>
+
+          <div class="method-card">
+            <div class="method-icon" style="--c:#06B6D4">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3 data-i18n="method.c6.title">6. 验证与交付</h3>
+            <p data-i18n="method.c6.desc">通过Chrome / Edge / Safari多浏览器测试；Lighthouse性能 ≥ 90；移动端响应式布局；GitHub开源便于评审复现。</p>
+          </div>
+        </div>
+
+        <!-- Tech stack badges -->
+        <div class="tech-stack">
+          <span class="tech-stack-label" data-i18n="method.stack">技术栈：</span>
+          <span class="tech-badge">HTML5</span>
+          <span class="tech-badge">CSS3</span>
+          <span class="tech-badge">Vanilla JS</span>
+          <span class="tech-badge">Chart.js 4.4</span>
+          <span class="tech-badge">html2pdf.js</span>
+          <span class="tech-badge">Noto Sans CJK</span>
+          <span class="tech-badge">WCAG 2.1 AA</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 2: FEATURES ===================== -->
+    <section id="features" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">02</span>
+          <h2 data-i18n="features.title">网站主要功能介绍</h2>
+          <p class="section-lead" data-i18n="features.lead">
+            围绕"监测-预警-响应-培训-数据"五大闭环，构建覆盖工业场所心脏急救全流程的智能模块。
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="feature-card data">
+            <div class="feature-num">01</div>
+            <h3 data-i18n="features.f1.title">实时生理监测</h3>
+            <p data-i18n="features.f1.desc">对接工人佩戴的智能手环/胸贴，实时采集心率、心电、血氧、体表温度，AI模型秒级识别异常节律。</p>
+            <ul class="feature-list">
+              <li data-i18n="features.f1.l1">单导联ECG实时上传</li>
+              <li data-i18n="features.f1.l2">异常节律即时报警</li>
+              <li data-i18n="features.f1.l3">个体基线学习</li>
+            </ul>
+          </div>
+
+          <div class="feature-card data">
+            <div class="feature-num">02</div>
+            <h3 data-i18n="features.f2.title">AI风险预测</h3>
+            <p data-i18n="features.f2.desc">融合工龄、班次、工种、生理指标，基于梯度提升模型输出未来24h心脏事件风险评分，支持分层管理。</p>
+            <ul class="feature-list">
+              <li data-i18n="features.f2.l1">12项核心特征工程</li>
+              <li data-i18n="features.f2.l2">分高/中/低三级风险</li>
+              <li data-i18n="features.f2.l3">可解释SHAP值展示</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-num">03</div>
+            <h3 data-i18n="features.f3.title">AED物联网络</h3>
+            <p data-i18n="features.f3.desc">园区AED设备全部联网，可视化展示设备分布、电量、有效期；事件发生时最近AED自动调度。</p>
+            <ul class="feature-list">
+              <li data-i18n="features.f3.l1">设备健康度自检</li>
+              <li data-i18n="features.f3.l2">就近调度算法</li>
+              <li data-i18n="features.f3.l3">取用记录可追溯</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-num">04</div>
+            <h3 data-i18n="features.f4.title">急救一键响应</h3>
+            <p data-i18n="features.f4.desc">触发SOS后并行通知工厂医务室、附近受训志愿者、120/119急救中心，并语音引导现场CPR与AED操作。</p>
+            <ul class="feature-list">
+              <li data-i18n="features.f4.l1">三路同时呼叫</li>
+              <li data-i18n="features.f4.l2">AHA 2025语音指导</li>
+              <li data-i18n="features.f4.l3">现场视频回传</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-num">05</div>
+            <h3 data-i18n="features.f5.title">CPR培训管理</h3>
+            <p data-i18n="features.f5.desc">基于AHA/KACPR最新指南的在线课程+考核+证书全流程数字化，确保关键岗位人员持证上岗。</p>
+            <ul class="feature-list">
+              <li data-i18n="features.f5.l1">中韩双语课件</li>
+              <li data-i18n="features.f5.l2">VR情景模拟</li>
+              <li data-i18n="features.f5.l3">证书有效期预警</li>
+            </ul>
+          </div>
+
+          <div class="feature-card data">
+            <div class="feature-num">06</div>
+            <h3 data-i18n="features.f6.title">安全数据驾驶舱</h3>
+            <p data-i18n="features.f6.desc">为企业EHS与公共卫生主管部门提供园区级、企业级、行业级心脏安全数据汇总与趋势分析。</p>
+            <ul class="feature-list">
+              <li data-i18n="features.f6.l1">多层级指标钻取</li>
+              <li data-i18n="features.f6.l2">同比/环比分析</li>
+              <li data-i18n="features.f6.l3">监管报告一键导出</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 3: DASHBOARD ===================== -->
+    <section id="dashboard" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num is-data">03</span>
+          <h2 data-i18n="dashboard.title">数据可视化仪表盘（演示）</h2>
+          <p class="section-lead" data-i18n="dashboard.lead">
+            基于公开统计与AHA/KACPR文献模拟生成的展示数据，呈现平台可输出的关键运营与流行病学指标。
+          </p>
+        </div>
+
+        <div class="dashboard-grid">
+          <div class="chart-card">
+            <h3 data-i18n="dashboard.c1.title">工业场所心脏骤停月度发生率</h3>
+            <p class="chart-sub" data-i18n="dashboard.c1.sub">每10万工时·2025年模拟数据</p>
+            <div class="chart-wrap"><canvas id="chartIncidence"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <h3 data-i18n="dashboard.c2.title">急救响应时间分布</h3>
+            <p class="chart-sub" data-i18n="dashboard.c2.sub">从SOS到首次CPR/AED使用（分钟）</p>
+            <div class="chart-wrap"><canvas id="chartResponse"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <h3 data-i18n="dashboard.c3.title">AED 4分钟可达覆盖率</h3>
+            <p class="chart-sub" data-i18n="dashboard.c3.sub">平台部署前 vs 部署后</p>
+            <div class="chart-wrap"><canvas id="chartCoverage"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <h3 data-i18n="dashboard.c4.title">心脏事件风险因素权重</h3>
+            <p class="chart-sub" data-i18n="dashboard.c4.sub">SHAP值Top6（标准化）</p>
+            <div class="chart-wrap"><canvas id="chartRisk"></canvas></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 4: EFFECTS ===================== -->
+    <section id="effects" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">04</span>
+          <h2 data-i18n="effects.title">预期效果与应用价值</h2>
+          <p class="section-lead" data-i18n="effects.lead">
+            从生命救治、企业效益、公共卫生与中韩产业合作四个维度，量化平台的核心价值。
+          </p>
+        </div>
+
+        <div class="effects-grid">
+          <div class="effect-card">
+            <div class="effect-big">+25<span>%</span></div>
+            <h3 data-i18n="effects.e1.title">院外心脏骤停存活率提升</h3>
+            <p data-i18n="effects.e1.desc">通过缩短"识别-CPR-AED"链条时间，参考AHA 2025指南目标，预期OHCA出院存活率从10%提升至25%以上。</p>
+          </div>
+          <div class="effect-card">
+            <div class="effect-big">-60<span>%</span></div>
+            <h3 data-i18n="effects.e2.title">首次响应时间下降</h3>
+            <p data-i18n="effects.e2.desc">基于AED联网+志愿者就近调度，预期SOS触发到现场CPR时间从平均8分钟缩短至3分钟以内。</p>
+          </div>
+          <div class="effect-card">
+            <div class="effect-big">3<span>类</span></div>
+            <h3 data-i18n="effects.e3.title">用户全覆盖</h3>
+            <p data-i18n="effects.e3.desc">覆盖企业EHS管理员、现场工人/志愿者、卫生监管机构三类核心用户，形成"事前-事中-事后"协同闭环。</p>
+          </div>
+          <div class="effect-card">
+            <div class="effect-big">CN<span>·</span>KR</div>
+            <h3 data-i18n="effects.e4.title">中韩产业合作落地</h3>
+            <p data-i18n="effects.e4.desc">中韩双语原生设计，可直接服务中韩跨境工业园区（如山东韩资园、京畿道在中企业），推动数字健康产业互联互通。</p>
+          </div>
+          <div class="effect-card">
+            <div class="effect-big">SDG3</div>
+            <h3 data-i18n="effects.e5.title">对接联合国可持续发展目标</h3>
+            <p data-i18n="effects.e5.desc">直接响应SDG 3.4"通过预防和治疗减少非传染性疾病过早死亡"与SDG 8"体面工作"，具备国际推广价值。</p>
+          </div>
+          <div class="effect-card">
+            <div class="effect-big">ROI</div>
+            <h3 data-i18n="effects.e6.title">企业投资回报清晰</h3>
+            <p data-i18n="effects.e6.desc">单次心脏骤停救治平均成本约30-50万元；按平台覆盖1万名工人，预期年减少重大事件成本可达千万级，ROI &gt; 5。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 5: OTHER ===================== -->
+    <section id="other" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">05</span>
+          <h2 data-i18n="other.title">其他相关说明</h2>
+          <p class="section-lead" data-i18n="other.lead">
+            团队介绍、参考标准、数据来源、合规声明与联系方式。
+          </p>
+        </div>
+
+        <div class="other-grid">
+          <div class="other-card">
+            <h3 data-i18n="other.team.title">研发团队</h3>
+            <ul class="kv-list">
+              <li><b data-i18n="other.team.k1">项目负责人：</b><span data-i18n="other.team.v1">吴静蕊（西安医学高等专科学校 · 庆云大学公共卫生博士在读）</span></li>
+              <li><b data-i18n="other.team.k2">研究方向：</b><span data-i18n="other.team.v2">数字健康、急救医学、流行病学</span></li>
+              <li><b data-i18n="other.team.k3">合作机构：</b><span data-i18n="other.team.v3">西安医学高等专科学校 · 庆云大学 · 韩国心肺复苏协会(KACPR)</span></li>
+            </ul>
+          </div>
+
+          <div class="other-card">
+            <h3 data-i18n="other.std.title">参考标准与指南</h3>
+            <ul class="kv-list">
+              <li>AHA 2025 ECC &amp; CPR Guidelines</li>
+              <li>European Resuscitation Council (ERC) 2021</li>
+              <li>Korean Association of CPR (KACPR) 2025</li>
+              <li>WHO Global Health &amp; Worksite Safety Framework</li>
+              <li>ISO 45001 Occupational Health &amp; Safety</li>
+            </ul>
+          </div>
+
+          <div class="other-card">
+            <h3 data-i18n="other.data.title">数据来源声明</h3>
+            <p data-i18n="other.data.desc">本演示站所有数值均为基于公开统计（AHA Heart Disease &amp; Stroke Statistics 2025、KACPR年报、ILO职业安全统计）的模拟示例，仅用于平台能力展示，不代表真实生产数据。</p>
+          </div>
+
+          <div class="other-card">
+            <h3 data-i18n="other.comp.title">合规与开源</h3>
+            <ul class="kv-list">
+              <li><b data-i18n="other.comp.k1">数据保护：</b><span data-i18n="other.comp.v1">前端零留存、HTTPS强制、PDF本地生成</span></li>
+              <li><b data-i18n="other.comp.k2">许可协议：</b><span>MIT License（源代码）</span></li>
+              <li><b data-i18n="other.comp.k3">AI使用披露：</b><span data-i18n="other.comp.v3">仅用于代码与文案润色，无患者数据进入AI</span></li>
+            </ul>
+          </div>
+
+          <div class="other-card">
+            <h3 data-i18n="other.contact.title">联系方式</h3>
+            <ul class="kv-list">
+              <li><b>Email：</b><a href="mailto:253207006@ikw.ac.kr">253207006@ikw.ac.kr</a></li>
+              <li><b data-i18n="other.contact.k2">机构：</b><span data-i18n="other.contact.v2">西安医学高等专科学校 / Kyungwoon University</span></li>
+              <li><b data-i18n="other.contact.k3">竞赛主题：</b><span data-i18n="other.contact.v3">数字健康医疗竞赛 · 产业安全</span></li>
+            </ul>
+          </div>
+
+          <div class="other-card">
+            <h3 data-i18n="other.roadmap.title">未来路线图</h3>
+            <ul class="kv-list">
+              <li data-i18n="other.roadmap.r1">2026 Q3：在2家中韩合资工厂试点上线</li>
+              <li data-i18n="other.roadmap.r2">2026 Q4：完成500人前瞻队列数据采集</li>
+              <li data-i18n="other.roadmap.r3">2027 Q1：申请韩国食药处(MFDS)数字医疗器械备案</li>
+              <li data-i18n="other.roadmap.r4">2027 Q2：发表SCI论文 + 推广至10家工业园区</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong data-i18n="brand.title">工心守护</strong>
+        <span data-i18n="footer.desc">工业场所心脏急救响应平台 · 数字健康竞赛参赛作品</span>
+      </div>
+      <div class="footer-meta">
+        <span>© 2026 Wu Jingrui</span>
+        <span>Xi'an Medical College · Kyungwoon University</span>
+        <span data-i18n="footer.theme">主题：产业安全</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== HIDDEN KOREAN PDF SOURCE ===================== -->
+  <!-- This block is always rendered in Korean for PDF generation, regardless of UI language -->
+  <div id="pdfSource" aria-hidden="true">
+    <div class="pdf-page">
+      <div class="pdf-header">
+        <div class="pdf-brand">
+          <div class="pdf-brand-title">CardioGuard Industrial · 산업심장수호</div>
+          <div class="pdf-brand-sub">산업 현장 심정지 응급 대응 플랫폼</div>
+        </div>
+        <div class="pdf-meta">
+          <div>디지털 헬스케어 경진대회</div>
+          <div>주제: 산업 안전 (産業安全)</div>
+          <div>제출자: Wu Jingrui (吴静蕊)</div>
+          <div>소속: 시안의학고등전문학교 · 경운대학교</div>
+        </div>
+      </div>
+
+      <h1 class="pdf-h1">CardioGuard Industrial<br/>산업 현장 심정지 응급 대응 플랫폼</h1>
+      <p class="pdf-abs">
+        본 플랫폼은 미국심장협회(AHA) 2025 ECC 가이드라인과 한국심폐소생협회(KACPR) 기준에 기반하여,
+        산업 현장에서 발생하는 심정지(SCA)에 대한 "감지 - 예측 - 대응 - 교육"의 전 주기적 디지털 솔루션을 제공합니다.
+        중국어·한국어 이중 언어를 지원하며, 정적 웹 기반으로 어디서나 즉시 배포·이용이 가능합니다.
+      </p>
+
+      <h2 class="pdf-h2">1. 웹사이트 설계 및 개발 방법</h2>
+      <p>본 플랫폼은 "사용자 중심 · 데이터 기반 · 표준 연계"의 세 가지 원칙에 따라 설계되었습니다.</p>
+      <ul>
+        <li><b>요구사항 정의:</b> AHA 2025 ECC 가이드라인과 중·한 양국의 산업 현장 응급의료 공백을 분석하여, "4분 골든타임 대응, 이중 언어 접근성, 모바일 우선" 원칙을 도출하였습니다.</li>
+        <li><b>기술 아키텍처:</b> 순수 정적 HTML5/CSS3/Vanilla JavaScript를 채택하여 서버 의존도를 제거하였고, Chart.js로 데이터 시각화를, html2pdf.js로 클라이언트 PDF 출력을 구현하였습니다. Netlify·GitHub Pages에 원클릭 배포가 가능합니다.</li>
+        <li><b>국제화(i18n):</b> data-i18n 속성 매핑 방식의 경량 i18n 모듈을 자체 구현하여, 전체 UI를 중국어 ↔ 한국어로 즉시 전환할 수 있도록 하였으며 Noto Sans CJK 폰트로 모든 디바이스에서 동일한 가독성을 보장합니다.</li>
+        <li><b>접근성:</b> WCAG 2.1 AA 기준을 준수하여 시맨틱 HTML, ARIA 레이블, 키보드 내비게이션, 4.5:1 명도 대비를 적용하였습니다.</li>
+        <li><b>보안·프라이버시:</b> 프런트엔드 데이터 무저장, HTTPS 강제, PDF의 로컬 생성(서버 미전송)을 통해 한국 개인정보보호법 및 GDPR 수준의 모범 사례를 따릅니다.</li>
+        <li><b>검증·배포:</b> Chrome / Edge / Safari 브라우저 호환성 테스트, Lighthouse 성능 점수 90 이상, 반응형 디자인을 통한 모바일 최적화, GitHub 오픈소스 공개로 심사의 재현성을 보장합니다.</li>
+      </ul>
+
+      <h2 class="pdf-h2">2. 웹사이트 주요 기능 소개</h2>
+      <p>본 플랫폼은 "감지 - 예측 - 대응 - 교육 - 데이터"의 5대 폐쇄 루프를 중심으로 다음 6개 모듈을 제공합니다.</p>
+      <ol>
+        <li><b>실시간 생체신호 모니터링:</b> 근로자가 착용한 스마트 밴드 / 흉부 패치를 통해 심박수, 단일 유도 ECG, 혈중 산소포화도, 피부 온도를 실시간 수집하며, AI 모델이 초 단위로 비정상 리듬을 식별합니다.</li>
+        <li><b>AI 위험도 예측:</b> 근속 연수, 교대 근무, 직종, 생리 지표 등 12개 핵심 특징을 결합한 그래디언트 부스팅 모델로 향후 24시간 심장 이벤트 위험 점수를 출력하며, 고·중·저 3단계 위험 등급 관리와 SHAP 기반 설명 가능성을 제공합니다.</li>
+        <li><b>AED 사물인터넷 네트워크:</b> 산업단지 내 모든 AED 장비를 네트워크에 연결하여 위치·배터리·유효기간을 시각화하고, 심정지 발생 시 가장 가까운 AED를 자동으로 안내합니다.</li>
+        <li><b>응급 원클릭 대응:</b> SOS 트리거 시 공장 의무실, 인근 훈련받은 자원봉사자, 119 / 120 응급센터에 동시 알림을 발송하며 AHA 2025 가이드라인 기반의 음성 안내로 현장 CPR과 AED 사용을 지원합니다.</li>
+        <li><b>CPR 교육 관리:</b> AHA / KACPR 최신 지침에 따른 온라인 강좌·평가·인증 발급을 디지털화하여 핵심 직무자의 자격 유지를 보장하며, 중국어·한국어 이중 언어 교육 콘텐츠와 VR 시뮬레이션을 지원합니다.</li>
+        <li><b>안전 데이터 콕핏:</b> 기업 EHS 부서 및 공공 보건 당국에 산업단지급·기업급·산업급 심장 안전 데이터를 다층적으로 집계·분석하여 제공하며, 규제 보고서를 원클릭으로 내보낼 수 있습니다.</li>
+      </ol>
+
+      <h2 class="pdf-h2">3. 기대 효과 및 응용 가치</h2>
+      <ul>
+        <li><b>생존율 향상 (+25%p):</b> "인지 - CPR - AED" 사슬의 시간을 단축함으로써 AHA 2025의 목표에 부합하는 OHCA 퇴원 생존율 25% 이상을 기대할 수 있습니다.</li>
+        <li><b>응답 시간 단축 (-60%):</b> AED 네트워킹과 자원봉사자 근접 디스패치를 통해 SOS 발생 ~ 현장 CPR 평균 시간을 8분에서 3분 이내로 단축할 것으로 예상합니다.</li>
+        <li><b>3대 사용자 군 전면 지원:</b> 기업 EHS 관리자, 현장 근로자·자원봉사자, 보건 감독 당국의 3대 핵심 사용자를 모두 커버하여 사전·사중·사후의 협력 루프를 완성합니다.</li>
+        <li><b>중·한 산업 협력의 실질적 구현:</b> 이중 언어 네이티브 설계를 통해 산둥성 한국 자본 산업단지, 경기도 내 중국 진출 기업 등 중·한 국경 간 산업 현장에 직접 적용 가능하며 디지털 헬스 산업의 상호 연결을 촉진합니다.</li>
+        <li><b>UN 지속가능발전목표(SDG)와의 연계:</b> SDG 3.4(비전염성 질환 조기 사망 감소) 및 SDG 8(양질의 일자리)에 직접 부응하며 국제적 확장 가치를 가집니다.</li>
+        <li><b>명확한 기업 투자 회수율:</b> 심정지 1건당 평균 치료 비용은 30-50만 위안 수준이며, 본 플랫폼이 1만 명의 근로자를 커버할 경우 연간 천만 위안 규모의 비용 절감이 가능하여 ROI > 5가 예상됩니다.</li>
+      </ul>
+
+      <h2 class="pdf-h2">4. 기타 관련 설명</h2>
+      <p><b>연구 책임자:</b> 吴静蕊(Wu Jingrui), 시안의학고등전문학교 / 경운대학교 보건학 박사과정.</p>
+      <p><b>협력 기관:</b> 시안의학고등전문학교 · 경운대학교 · 한국심폐소생협회(KACPR).</p>
+      <p><b>참고 표준 및 지침:</b> AHA 2025 ECC &amp; CPR Guidelines / ERC 2021 / KACPR 2025 / WHO Global Health &amp; Worksite Safety / ISO 45001.</p>
+      <p><b>데이터 출처:</b> 본 데모 사이트의 모든 수치는 AHA Heart Disease &amp; Stroke Statistics 2025, KACPR 연차 보고서, ILO 산업 안전 통계 등 공개 자료를 기반으로 한 시뮬레이션 예시이며, 실제 생산 데이터를 대표하지 않습니다.</p>
+      <p><b>규제 준수:</b> 프런트엔드 무저장 · HTTPS 강제 · PDF 로컬 생성을 통해 한국 개인정보보호법 및 GDPR 수준의 보안을 준수합니다. 소스 코드는 MIT 라이선스로 공개됩니다.</p>
+      <p><b>AI 사용 공개:</b> 본 플랫폼의 개발 과정에서 AI는 코드 및 문안의 다듬기에만 사용되었으며, 어떠한 환자 데이터도 AI에 입력되지 않았습니다.</p>
+      <p><b>향후 로드맵:</b></p>
+      <ul>
+        <li>2026 Q3 - 중·한 합자 공장 2곳에서 시범 운영 개시</li>
+        <li>2026 Q4 - 500명 전향적 코호트 데이터 수집 완료</li>
+        <li>2027 Q1 - 한국 식품의약품안전처(MFDS) 디지털 의료기기 신고</li>
+        <li>2027 Q2 - SCI 논문 발표 및 10개 산업단지로 확장 배포</li>
+      </ul>
+      <p><b>연락처:</b> Wu Jingrui, 시안의학고등전문학교 / Kyungwoon University · Email: 253207006@ikw.ac.kr</p>
+
+      <div class="pdf-footer">
+        © 2026 Wu Jingrui · CardioGuard Industrial · 디지털 헬스케어 경진대회 (주제: 산업 안전) 제출작
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== TOAST ===================== -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/charts.js"></script>
+</body>
+</html>

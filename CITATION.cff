@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "CardioGuard Industrial: A Bilingual Digital Platform for Industrial-Site Cardiac Emergency Response"
+abstract: >
+  Out-of-Hospital Cardiac Arrest (OHCA) is one of the most severe acute health
+  risks in industrial workplaces worldwide. CardioGuard Industrial integrates the
+  AHA 2025 ECC Guidelines, AI-based risk prediction, an AED IoT network, and
+  digital CPR training into a Chinese-Korean bilingual web platform that closes
+  the "detect-predict-respond-train-data" loop for industrial parks. This entry
+  for the Digital Health Competition (Industrial Safety theme) provides a
+  reproducible static-web prototype with one-click Korean PDF export.
+type: software
+authors:
+  - family-names: Wu
+    given-names: Jingrui
+    name-particle: ""
+    alias: 吴静蕊
+    email: 253207006@ikw.ac.kr
+    affiliation: "Xi'an Medical College (西安医学高等专科学校); Department of Public Health, Kyungwoon University (경운대학교)"
+    orcid: ""
+repository-code: "https://github.com/cardioguard/cardioguard-industrial"
+url: "https://cardioguard-industrial.netlify.app/"
+license: MIT
+version: "1.0.0"
+date-released: "2026-06-03"
+keywords:
+  - digital health
+  - industrial safety
+  - cardiac arrest
+  - out-of-hospital cardiac arrest
+  - AED
+  - CPR
+  - IoT
+  - AHA 2025 ECC
+  - KACPR
+  - China-Korea cooperation
+  - bilingual platform
+identifiers:
+  - type: other
+    value: "CardioGuard-Industrial-v1.0.0"
+    description: "Internal release tag"
+preferred-citation:
+  type: conference-paper
+  title: "CardioGuard Industrial: A Bilingual Digital Platform for Industrial-Site Cardiac Emergency Response"
+  authors:
+    - family-names: Wu
+      given-names: Jingrui
+  year: 2026
+  collection-title: "Digital Health Competition — Industrial Safety Track"
+  url: "https://cardioguard-industrial.netlify.app/"

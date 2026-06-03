@@ -1,0 +1,38 @@
+{
+  "name": "CardioGuard Industrial · 工心守护 · 산업심장수호",
+  "short_name": "CardioGuard",
+  "description": "AI · IoT · CPR-driven cardiac emergency response platform for industrial workplaces. Digital Health Competition · Industrial Safety entry.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0B1120",
+  "theme_color": "#DC2626",
+  "lang": "zh-CN",
+  "categories": ["medical", "health", "productivity", "education"],
+  "icons": [
+    {
+      "src": "assets/icon-180.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Korean PDF",
+      "short_name": "PDF (KR)",
+      "url": "/assets/CardioGuard_Industrial_KR.pdf"
+    },
+    {
+      "name": "Dashboard",
+      "url": "/#dashboard"
+    }
+  ]
+}

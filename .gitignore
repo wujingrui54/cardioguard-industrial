@@ -1,0 +1,70 @@
+# =============================================================================
+# CardioGuard Industrial — .gitignore
+# =============================================================================
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# --- Editors / IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vs/
+
+# --- Python (generate_pdf.py) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+ENV/
+
+# --- Node (in case PWA/build tools are added) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# --- Build / dist (none currently, but reserved) ---
+dist/
+build/
+.cache/
+.parcel-cache/
+.next/
+out/
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Local environment ---
+.env
+.env.local
+.env.*.local
+
+# --- Submission packaging output ---
+submission_*.zip
+*.zip
+!assets/CardioGuard_Industrial_KR.pdf
+
+# --- Claude / agent artifacts ---
+.claude/
+*.bak
+*.tmp
+
+# --- Generated screenshots cache (keep checked-in canonicals only) ---
+assets/screenshots/_tmp_*
