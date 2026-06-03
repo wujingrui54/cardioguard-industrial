@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Disallow: /assets/CardioGuard_Industrial_KR.pdf$
-Allow: /assets/
+Disallow: /cardioguard-industrial/assets/CardioGuard_Industrial_KR.pdf$
+Allow: /cardioguard-industrial/assets/
 
-Sitemap: https://cardioguard-industrial.netlify.app/sitemap.xml
+Sitemap: https://wujingrui54.github.io/cardioguard-industrial/sitemap.xml

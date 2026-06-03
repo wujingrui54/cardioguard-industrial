@@ -5,6 +5,8 @@
 
 [![Tech](https://img.shields.io/badge/Stack-HTML%2FCSS%2FJS-blue)]() [![Lang](https://img.shields.io/badge/i18n-中文%20%2F%20한국어-red)]() [![PDF](https://img.shields.io/badge/PDF-Korean%20Export-orange)]() [![License](https://img.shields.io/badge/License-MIT-green)]()
 
+> 🌐 **在线访问 / 라이브 데모 / Live demo:** <https://wujingrui54.github.io/cardioguard-industrial/>
+
 ---
 
 ## 📌 项目简介 / 프로젝트 개요
@@ -19,7 +21,7 @@
 
 | # | 项目 | 文件 / URL |
 |---|---|---|
-| 1 | **网站 URL** | 部署后填写（GitHub Pages / Netlify） |
+| 1 | **网站 URL** | 🌐 <https://wujingrui54.github.io/cardioguard-industrial/> |
 | 2 | **源代码** | 本仓库（index.html · css/ · js/ · assets/） |
 | 3 | **论文** | [`PAPER_ZH.md`](PAPER_ZH.md) · [`PAPER_KR.md`](PAPER_KR.md) |
 | 4 | **韩文 PDF** | 站点右上角 **"한국어 PDF 다운로드"** 按钮一键导出 |
@@ -99,7 +101,7 @@ npx serve .
 **GitHub Pages:**
 ```bash
 git init && git add . && git commit -m "Initial commit"
-git remote add origin https://github.com/<user>/cardioguard-industrial.git
+git remote add origin https://github.com/wujingrui54/cardioguard-industrial.git
 git push -u origin main
 # Settings → Pages → Source: main / root
 ```

@@ -22,7 +22,7 @@
 
 | # | Item | Path / URL | Size | Status |
 |---|---|---|---:|:---:|
-| 1 | **🌐 Live website URL** | `https://<填写部署后的URL>` | — | ⬜ To fill after deploy |
+| 1 | **🌐 Live website URL** | https://wujingrui54.github.io/cardioguard-industrial/ | — | ✅ Live (GitHub Pages) |
 | 2 | **📦 Source code (ZIP)** | `submission_CardioGuard_Industrial_v1.0.0.zip` | ~ 250 KB | ✅ via `pack_submission.py` |
 | 3 | **📑 Paper (Markdown)** | `PAPER_ZH.md` · `PAPER_KR.md` · `PAPER_EN.md` | 41 KB total | ✅ |
 | 4 | **📑 Paper (Word)** | `paper/CardioGuard_paper_ZH.docx` · `_KR.docx` · `_EN.docx` | ~ 90 KB total | ✅ via `convert_paper.py` |
