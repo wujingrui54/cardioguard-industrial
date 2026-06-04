@@ -94,6 +94,18 @@
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css" />
 
+  <!-- Component styles: CPR training videos -->
+  <style>
+    .video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;margin-top:8px}
+    .video-card{background:var(--bg-2);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+    .video-frame{position:relative;width:100%;padding-top:56.25%;background:#000}
+    .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    .video-meta{padding:18px 20px}
+    .video-meta h3{font-size:16px;font-weight:700;color:var(--text);margin:0 0 6px}
+    .video-src{font-size:13px;color:var(--text-3);margin:0;line-height:1.6}
+    .video-note{margin:22px auto 0;font-size:12.5px;color:var(--text-3);line-height:1.7;text-align:center;max-width:760px}
+  </style>
+
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
@@ -118,6 +130,7 @@
       <nav class="nav-menu" aria-label="Primary">
         <a href="#method" data-i18n="nav.method">开发方法</a>
         <a href="#features" data-i18n="nav.features">核心功能</a>
+        <a href="#training" data-i18n="nav.training">急救演示</a>
         <a href="#dashboard" data-i18n="nav.dashboard">数据仪表盘</a>
         <a href="#effects" data-i18n="nav.effects">应用价值</a>
         <a href="#other" data-i18n="nav.other">其他说明</a>
@@ -341,11 +354,54 @@
       </div>
     </section>
 
-    <!-- ===================== SECTION 3: DASHBOARD ===================== -->
+    <!-- ===================== SECTION 3: CPR TRAINING VIDEOS ===================== -->
+    <section id="training" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">03</span>
+          <h2 data-i18n="training.title">急救演示视频（官方）</h2>
+          <p class="section-lead" data-i18n="training.lead">
+            精选美国心脏协会(AHA)与韩国疾病管理厅(KDCA)官方心肺复苏(CPR)教学视频，作为平台CPR培训模块的标准示范，与论文引用的AHA/KACPR标准保持一致。
+          </p>
+        </div>
+
+        <div class="video-grid">
+          <div class="video-card">
+            <div class="video-frame">
+              <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/A5PnI4I-vd8"
+                title="AHA Hands-Only CPR"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-meta">
+              <h3 data-i18n="training.v1.title">AHA 仅用手心肺复苏（Hands-Only CPR）</h3>
+              <p class="video-src" data-i18n="training.v1.src">来源：American Heart Association（美国心脏协会）· 官方频道</p>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-frame">
+              <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/5DWyihalLMM"
+                title="질병관리청 일반인 심폐소생술 표준 교육"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-meta">
+              <h3 data-i18n="training.v2.title">一般人CPR标准教育 · 基础课程</h3>
+              <p class="video-src" data-i18n="training.v2.src">来源：질병관리청 아프지마TV（韩国疾病管理厅 KDCA）· 官方频道</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="video-note" data-i18n="training.note">注：以上为官方机构公开发布的教育视频，经 YouTube 官方嵌入方式引用，版权归原机构所有，仅用于急救教育演示。</p>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 4: DASHBOARD ===================== -->
     <section id="dashboard" class="section">
       <div class="container">
         <div class="section-head">
-          <span class="section-num is-data">03</span>
+          <span class="section-num is-data">04</span>
           <h2 data-i18n="dashboard.title">数据可视化仪表盘（演示）</h2>
           <p class="section-lead" data-i18n="dashboard.lead">
             基于公开统计与AHA/KACPR文献模拟生成的展示数据，呈现平台可输出的关键运营与流行病学指标。
@@ -381,7 +437,7 @@
     <section id="effects" class="section section-alt">
       <div class="container">
         <div class="section-head">
-          <span class="section-num">04</span>
+          <span class="section-num">05</span>
           <h2 data-i18n="effects.title">预期效果与应用价值</h2>
           <p class="section-lead" data-i18n="effects.lead">
             从生命救治、企业效益、公共卫生与中韩产业合作四个维度，量化平台的核心价值。
@@ -427,7 +483,7 @@
     <section id="other" class="section">
       <div class="container">
         <div class="section-head">
-          <span class="section-num">05</span>
+          <span class="section-num">06</span>
           <h2 data-i18n="other.title">其他相关说明</h2>
           <p class="section-lead" data-i18n="other.lead">
             团队介绍、参考标准、数据来源、合规声明与联系方式。

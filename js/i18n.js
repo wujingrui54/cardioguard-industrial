@@ -76,6 +76,15 @@ window.I18N = {
     "features.f6.l2": "同比/环比分析",
     "features.f6.l3": "监管报告一键导出",
 
+    "nav.training": "急救演示",
+    "training.title": "急救演示视频（官方）",
+    "training.lead": "精选美国心脏协会(AHA)与韩国疾病管理厅(KDCA)官方心肺复苏(CPR)教学视频，作为平台CPR培训模块的标准示范，与论文引用的AHA/KACPR标准保持一致。",
+    "training.v1.title": "AHA 仅用手心肺复苏（Hands-Only CPR）",
+    "training.v1.src": "来源：American Heart Association（美国心脏协会）· 官方频道",
+    "training.v2.title": "一般人CPR标准教育 · 基础课程",
+    "training.v2.src": "来源：질병관리청 아프지마TV（韩国疾病管理厅 KDCA）· 官方频道",
+    "training.note": "注：以上为官方机构公开发布的教育视频，经 YouTube 官方嵌入方式引用，版权归原机构所有，仅用于急救教育演示。",
+
     "dashboard.title": "数据可视化仪表盘（演示）",
     "dashboard.lead": "基于公开统计与AHA/KACPR文献模拟生成的展示数据，呈现平台可输出的关键运营与流行病学指标。",
     "dashboard.c1.title": "工业场所心脏骤停月度发生率",
@@ -237,6 +246,15 @@ window.I18N = {
     "features.f6.l1": "다층 지표 드릴다운",
     "features.f6.l2": "전년·전기 동기 비교",
     "features.f6.l3": "규제 보고서 원클릭 출력",
+
+    "nav.training": "응급 시연",
+    "training.title": "응급처치 시연 영상 (공식)",
+    "training.lead": "미국심장협회(AHA)와 질병관리청(KDCA)의 공식 심폐소생술(CPR) 교육 영상을 엄선하여 플랫폼 CPR 교육 모듈의 표준 시연으로 제공하며, 논문이 인용한 AHA/KACPR 표준과 일치합니다.",
+    "training.v1.title": "AHA 가슴압박소생술 (Hands-Only CPR)",
+    "training.v1.src": "출처: American Heart Association(미국심장협회) · 공식 채널",
+    "training.v2.title": "일반인 심폐소생술 표준 교육 · 기초과정",
+    "training.v2.src": "출처: 질병관리청 아프지마TV(KDCA) · 공식 채널",
+    "training.note": "※ 위 영상은 공식 기관이 공개한 교육 자료로, YouTube 공식 임베드 방식으로 인용하였으며 저작권은 원 기관에 있습니다. 응급처치 교육 시연 목적에 한합니다.",
 
     "dashboard.title": "데이터 시각화 대시보드 (데모)",
     "dashboard.lead": "AHA / KACPR 문헌과 공개 통계를 기반으로 시뮬레이션한 데모 데이터로, 플랫폼이 출력할 수 있는 핵심 운영 및 역학 지표를 보여줍니다.",
