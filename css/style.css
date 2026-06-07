@@ -56,6 +56,14 @@ ul,ol{list-style:none}
 img,svg{display:block;max-width:100%}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
+/* ---------- Focus visibility (WCAG 2.4.7 AA) ---------- */
+:focus-visible{outline:3px solid #93C5FD;outline-offset:3px;border-radius:6px}
+.lang-btn:focus-visible,.download-btn:focus-visible,.btn:focus-visible,.nav-menu a:focus-visible{outline:3px solid #93C5FD;outline-offset:3px}
+
+/* ---------- Skip link (WCAG 2.4.1) ---------- */
+.skip-link{position:absolute;left:-9999px;top:0;z-index:100}
+.skip-link:focus{left:12px;top:12px;padding:10px 16px;background:#fff;color:#0B1120;border-radius:8px;font-weight:700}
+
 .container{max-width:var(--container);margin:0 auto;padding:0 28px}
 
 /* ---------- Navbar ---------- */
@@ -422,6 +430,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   .download-btn{padding:10px 12px}
   .brand-sub{display:none}
   .footer-inner{flex-direction:column;align-items:flex-start}
+  .chart-wrap{height:320px}
 }
 
 /* ---------- Print (PDF mode) ---------- */
@@ -433,3 +442,15 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 /* ---------- Reveal animation ---------- */
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
 .reveal.in{opacity:1;transform:translateY(0)}
+
+/* ---------- Reduced motion (WCAG 2.3.3) ---------- */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{
+    animation-duration:.001ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.001ms!important;
+    scroll-behavior:auto!important;
+  }
+  .reveal{opacity:1!important;transform:none!important}
+  .pulse-ring,.pulse-ring.delay{animation:none!important}
+}

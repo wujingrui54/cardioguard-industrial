@@ -80,7 +80,7 @@ python pack_submission.py
 
 - [x] Site renders correctly in Chrome / Edge / Firefox / Safari
 - [x] One-click Korean PDF download produces a non-blank, ≥ 100 KB file containing the four required sections
-- [x] Chinese / Korean language switch updates: hero, all five sections, chart labels, footer
+- [x] Chinese / Korean language switch updates: hero, all six sections, chart labels, footer
 - [x] All `data-i18n` keys resolved in both `zh` and `ko` dictionaries (≈ 430 keys × 2)
 - [x] WCAG 2.1 AA contrast ratios on red, blue, amber, green, slate text colours against the dark background
 - [x] Lighthouse-style smoke: zero console errors / warnings; page weight < 1.5 MB (without CDN libs)

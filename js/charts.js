@@ -5,6 +5,12 @@
 (function(){
   'use strict';
 
+  // Graceful degradation: if the Chart.js CDN is blocked/offline, do not throw.
+  if (typeof Chart === 'undefined') {
+    window.CardioCharts = { refresh: function(){} };
+    return;
+  }
+
   const t = (k) => (window.CardioApp ? window.CardioApp.t(k) : k);
 
   // Common styles

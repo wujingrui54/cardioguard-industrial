@@ -46,7 +46,7 @@
 
     // notify charts to re-render labels
     if (window.CardioCharts && typeof window.CardioCharts.refresh === 'function') {
-      window.CardioCharts.refresh(lang);
+      window.CardioCharts.refresh();
     }
 
     // toast
@@ -83,7 +83,7 @@
     // Try static PDF first
     try {
       const resp = await fetch(STATIC_PDF, { cache: 'no-store' });
-      if (resp.ok && resp.headers.get('content-type')?.includes('pdf')) {
+      if (resp.ok) {
         const blob = await resp.blob();
         if (blob.size > 10000) {
           const url = URL.createObjectURL(blob);
